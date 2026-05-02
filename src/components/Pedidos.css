@@ -1,0 +1,158 @@
+.pedidos-container {
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cabecera-pedido {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #f1c40f; /* Línea dorada en el nombre de la lista */
+  padding-bottom: 15px;
+}
+
+.cabecera-pedido h2 {
+  color: hwb(209 58% 19%);
+  margin-bottom: 20px;
+}
+
+.cliente-card-moderna {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 1px solid #eee;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.cliente-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #f9f9f9;
+  padding-bottom: 12px;
+}
+
+.avatar-circulo {
+  width: 50px;
+  height: 50px;
+  background: #f1c40f; /* Tu amarillo corporativo */
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cliente-principal h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.badge-estado {
+  font-size: 0.7rem;
+  background: #f1f1f1;
+  color: #666;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.cliente-detalles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.detalle-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.detalle-item .icon {
+  font-size: 1.2rem;
+}
+
+.detalle-item label {
+  display: block;
+  font-size: 0.7rem;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.detalle-item p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/*producto de carritos*/
+.item-pedido {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.item-pedido img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.item-info {
+  flex-grow: 1;
+}
+
+.item-info h4 {
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.item-info p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.btn-eliminar {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.resumen-total {
+  margin-top: 30px;
+  padding: 20px;
+  background: #2c3e50;
+  color: white;
+  border-radius: 10px;
+  text-align: right;
+}
+
+.btn-pagar {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+}

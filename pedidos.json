@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "fecha": "2/5/2026, 4:09:17 p. m.",
+    "cliente": {
+      "nombre": "Jaime Andres",
+      "apellido": "Cala",
+      "email": "cala234@gmail.com",
+      "direccion": "Carrera 25#9-6 - Yariguies 1",
+      "municipio": "San Vicente de Chucuri",
+      "departamento": "Santander",
+      "celular": "3212503456"
+    },
+    "productos": [
+      {
+        "nombre": "NIKE AIR MAX",
+        "talla": "42",
+        "precio": 300000,
+        "cantidad": 1,
+        "imagen": "/src/assets/Nikex.jpg",
+        "color": "(ocre desierto)"
+      },
+      {
+        "nombre": "ADIDAS AA",
+        "talla": "41",
+        "precio": 190000,
+        "cantidad": 1,
+        "imagen": "/src/assets/Adidas3.jpg",
+        "color": "(negro y blanco)"
+      },
+      {
+        "nombre": "ADIDAS AA",
+        "talla": "37",
+        "precio": 175000,
+        "cantidad": 1,
+        "imagen": "/src/assets/Adidas%202.jpg",
+        "color": "(negro y blanco)"
+      }
+    ],
+    "total": 665000,
+    "metodoPago": "Daviplata"
+  }
+]

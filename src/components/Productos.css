@@ -1,0 +1,451 @@
+/* Contenedor General */
+.productos-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Cabecera y Tarjeta del Cliente */
+.cabecera-pedido h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/*Tarjeta cliente*/
+.cliente-card-moderna {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+  border-left: 6px solid #3498db;
+  text-align: left;
+}
+
+.cliente-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.avatar-circulo {
+  width: 55px;
+  height: 55px;
+  background: #2c3e50;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.cliente-principal h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.3rem;
+}
+
+.badge-estado {
+  font-size: 0.75rem;
+  background: #e8f4fd;
+  color: #3498db;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.cliente-detalles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.detalle-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.detalle-item label {
+  display: block;
+  font-size: 0.75rem;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.detalle-item p {
+  margin: 0;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/*Lista de Productos*/
+.lista-pedidos {
+  margin-bottom: 30px;
+}
+.item-pedido {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #eee;
+}
+.item-pedido img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-right: 25px;
+  background: #fdfdfd;
+  border-radius: 8px;
+}
+
+.item-info {
+  flex-grow: 1;
+}
+.item-info h4 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.item-info p {
+  margin: 2px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/*Pagos y Totales*/
+.resumen-total {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.resumen-total h3 {
+  font-size: 1.8rem;
+  color: #2ecc71; /* Verde éxito */
+  margin-bottom: 25px;
+  border-bottom: 2px solid #f9f9f9;
+  padding-bottom: 15px;
+}
+
+.metodo-pago-selector {
+  margin: 25px 0;
+  text-align: left;
+  padding: 15px;
+  background: #fcfcfc;
+  border: 1px dashed #3498db;
+  border-radius: 10px;
+}
+
+.opciones-pago-flex {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.opcion-pago {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: white;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Bolita del Radio Button */
+.check-radio {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+}
+
+/* ESTADO ACTIVO - NEQUI (Fucsia) */
+.opcion-pago.activa.nequi {
+  border-color: #ff00e5;
+  background-color: #fff0fc;
+  color: #ff00e5;
+}
+.opcion-pago.activa.nequi .check-radio {
+  border-color: #ff00e5;
+  background-color: #ff00e5; /* Se llena la bolita */
+}
+
+/* ESTADO ACTIVO - DAVIPLATA (Rojo) */
+.opcion-pago.activa.daviplata {
+  border-color: #ed1c24;
+  background-color: #fef2f2;
+  color: #ed1c24;
+}
+.opcion-pago.activa.daviplata .check-radio {
+  border-color: #ed1c24;
+  background-color: #ed1c24; /* Se llena la bolita */
+}
+
+/* Hover suave para las opciones no seleccionadas */
+.opcion-pago:hover:not(.activa) {
+  border-color: #3498db;
+  background-color: #f0f8ff;
+}
+
+.metodo-pago-selector label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/*Botones*/
+.btn-pagar {
+  width: 100%;
+  background-color: #2c3e50;
+  color: white;
+  padding: 18px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-pagar:hover {
+  background-color: #34495e;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.btn-eliminar {
+  background: #fff;
+  color: #e74c3c;
+  border: 1px solid #e74c3c;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+}
+
+.btn-eliminar:hover {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn-vaciar {
+  background: none;
+  border: none;
+  color: #95a5a6;
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.btn-vaciar:hover {
+  color: #e74c3c;
+}
+
+------
+
+
+.titulo-seccion {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.filtros-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* Para que en celular se acomoden en varias filas */
+}
+
+.btn-f {
+  background-color: white;
+  border: 2px solid #2c3e50;
+  color: #2c3e50;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.btn-f:hover {
+  background-color: #f1c40f;
+  border-color: #f1c40f;
+  color: #2c3e50;
+}
+
+.btn-f.activo {
+  background-color: #2c3e50;
+  color: white;
+}
+
+/* Grilla de Productos */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Tarjeta de Producto (Card) */
+.card {
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen del Producto */
+.card-image {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain; /* Evita que la imagen se estire */
+}
+
+/* Información del Producto */
+.card-info {
+  padding: 20px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-info h4 {
+  font-size: 1.25rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.color-texto {
+  font-size: 0.9rem;
+  color: #7f8c8d; /* Un gris suave */
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+.tallas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0 15px 0;
+}
+
+.talla-btn {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+/* 3. Efecto cuando pasas el mouse */
+.talla-btn:hover {
+  border-color: #3498db;
+  color: #3498db;
+}
+
+/* 4. Estilo de la talla cuando está SELECCIONADA */
+.talla-btn.seleccionada {
+  background-color: #2c3e50; /* Color oscuro como tu Navbar */
+  color: white;
+  border-color: #2c3e50;
+  transform: scale(1.05); /* Un toque de relieve */
+}
+
+/* Título pequeño arriba de las tallas */
+.tallas-titulo {
+  font-size: 0.75rem;
+  color: #888;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.precio {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2ecc71; /* Color verde éxito */
+  margin-bottom: 20px;
+}
+
+/* Botón Añadir */
+.btn-agregar {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-agregar:hover {
+  background-color: #2980b9;
+}
+
+.btn-agregar:active {
+  transform: scale(0.95);
+}

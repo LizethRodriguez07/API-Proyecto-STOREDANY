@@ -1,0 +1,152 @@
+.pagos-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sección de Datos (Cliente, Fecha, Pago) */
+.info-envio {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 5px solid #3498db; 
+}
+
+.info-envio h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.info-envio p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.resumen-pago {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* DISEÑO DE PRODUCTOS MEJORADO */
+.pago-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.producto-info-principal {
+  display: flex;
+  align-items: center;
+}
+
+.producto-info-principal div {
+  display: flex;
+  flex-direction: column;
+}
+
+.producto-info-principal strong {
+  font-size: 1rem;
+  color: #222;
+}
+
+.producto-info-principal small {
+  color: #777;
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+
+.producto-precio-cantidad {
+  text-align: right;
+}
+
+.cantidad-txt {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.subtotal-txt {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* TOTALES */
+.total-final {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.precio-total {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* BOTÓN AMARILLO */
+.btn-confirmar {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.btn-confirmar:hover {
+  transform: scale(1.02);
+  background-color: #34495e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid #f0f0f0;
+  margin: 10px 0;
+}
+
+/* ESTILOS DINÁMICOS PARA EL MEDIO DE PAGO */
+.tag-pago {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Color Fucsia para Nequi */
+.tag-pago.nequi {
+  background-color: #ff00e5;
+}
+
+/* Color Rojo para Daviplata */
+.tag-pago.daviplata {
+  background-color: #ed1c24;
+}
+
+/* Imagen miniatura de los productos en el resumen */
+.img-pago-mini {
+  width: 55px; 
+  height: 55px; 
+  object-fit: contain; 
+  border-radius: 8px; 
+  margin-right: 12px;
+  background: white;
+  border: 1px solid #eee;
+}
+
